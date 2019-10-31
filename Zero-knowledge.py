@@ -25,5 +25,8 @@ for i in frequency.keys():
 matrix_data =pd.DataFrame(diff_m, columns=english_freq_sorted.keys(), index=counter.keys())
 
 m1 =matrix_data.sort_values(axis=1, ascending=False, by = list(matrix_data.index))
+nearest_chars = m1[m1.columns[-5:]]
+print(nearest_chars)
+
 
 
